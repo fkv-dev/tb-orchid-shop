@@ -1,0 +1,84 @@
+<div class="section-card" id="contact">
+  <section class="contact">
+    <div class="container">
+      <h2 class="section-title">Rendelés &amp; Kapcsolat</h2>
+
+      <div class="contact__inner">
+        <div class="contact__intro">
+          <p>
+            Rendelését leadhatja az alábbi űrlapon, e-mailben vagy telefonon.
+            Igyekszünk minden megkeresésre 24 órán belül válaszolni.
+          </p>
+          <p>
+            <a href="mailto:info@orchidea-viraguzlet.hu">info@orchidea-viraguzlet.hu</a>
+            &nbsp;·&nbsp;
+            <a href="tel:+36301234567">+36 30 123 4567</a>
+          </p>
+        </div>
+
+        <form class="contact__form" action="#" method="post" novalidate>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Teljes neve</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="pl. Kovács Éva"
+                autocomplete="name"
+                required
+              >
+            </div>
+            <div class="form-group">
+              <label for="date">Mikorra kéri?</label>
+              <input
+                type="date"
+                id="date"
+                name="date"
+                required
+              >
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">E-mail cím</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="pl. kovacs.eva@gmail.com"
+                autocomplete="email"
+                required
+              >
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefonszám</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="pl. +36 30 123 4567"
+                autocomplete="tel"
+              >
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mit szeretne rendelni?</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Írja le részletesen rendelési igényét – alkalmat, mennyiséget, preferált virágokat, színeket..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary">Küldés</button>
+
+        </form>
+      </div>
+    </div>
+  </section>
+</div>

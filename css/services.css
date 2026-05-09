@@ -1,0 +1,73 @@
+/* ============================================================
+   ORCHIDEA VIRÁGÜZLET — Services
+   ============================================================ */
+
+.services {
+  /* hátteret a .section-card adja */
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.service-card {
+  background: var(--c-card);
+  border-radius: var(--radius-card);
+  padding: 36px 28px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border-top: 3px solid var(--c-primary);
+  transition:
+    transform  var(--transition),
+    box-shadow var(--transition);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.service-card:hover {
+  transform: translateY(-7px);
+  box-shadow: var(--shadow-hover);
+}
+
+.service-card__icon {
+  font-size: 2.6rem;
+  margin-bottom: 18px;
+  display: block;
+  line-height: 1;
+}
+
+.service-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--c-heading);
+  margin-bottom: 14px;
+  line-height: 1.3;
+}
+
+.service-card__text {
+  font-size: 0.88rem;
+  color: var(--c-body);
+  line-height: 1.7;
+}
+
+/* ── Responsive ──────────────────────────────────────────── */
+
+@media (max-width: 960px) {
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .services__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .service-card {
+    padding: 24px 20px;
+  }
+}

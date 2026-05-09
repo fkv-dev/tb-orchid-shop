@@ -1,0 +1,159 @@
+/* ============================================================
+   ORCHIDEA VIRÁGÜZLET — Base / Reset / Global
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--c-body);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* ── Teljes oldal háttér ─────────────────────────────────── */
+  background-image: url('../pic/back-pic.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, input, textarea, select {
+  font-family: var(--font-body);
+}
+
+/* ── Page content wrapper ────────────────────────────────── */
+
+.page-content {
+  padding: 28px 16px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ── Section card ────────────────────────────────────────── */
+
+.section-card {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  background: rgba(249, 247, 242, 0.94);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.10),
+    0 1px 4px  rgba(0, 0, 0, 0.06);
+  overflow: clip; /* clip helyett hidden – nem akadályozza a scroll-t mobilon */
+}
+
+.section-card--dark {
+  background: rgba(30, 25, 23, 0.93);
+}
+
+/* ── Container ───────────────────────────────────────────── */
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-px);
+}
+
+section {
+  padding: var(--section-py) 0;
+}
+
+/* ── Section title ───────────────────────────────────────── */
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.9rem, 3vw, 2.7rem);
+  color: var(--c-heading);
+  text-align: center;
+  margin-bottom: 52px;
+  line-height: 1.25;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 56px;
+  height: 3px;
+  background: var(--c-primary);
+  margin: 18px auto 0;
+  border-radius: 2px;
+}
+
+/* ── Buttons ─────────────────────────────────────────────── */
+
+.btn {
+  display: inline-block;
+  padding: 13px 30px;
+  border-radius: var(--radius-btn);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  transition:
+    background  var(--transition),
+    color       var(--transition),
+    transform   var(--transition),
+    box-shadow  var(--transition);
+}
+
+.btn--primary {
+  background: var(--c-primary);
+  color: var(--c-white);
+}
+
+.btn--primary:hover {
+  background: var(--c-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(181, 101, 167, 0.38);
+}
+
+/* Outline – header gombhoz */
+.btn--outline {
+  background: transparent;
+  color: var(--c-primary);
+  border: 2px solid var(--c-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn--outline:hover {
+  background: var(--c-primary);
+  color: var(--c-white);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(181, 101, 167, 0.30);
+}
+
+.btn-icon {
+  font-size: 1.1em;
+  line-height: 1;
+}

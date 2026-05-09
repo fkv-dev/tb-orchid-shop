@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orchidea Virágüzlet</title>
+  <meta name="description" content="Az Orchidea Virágüzlet – Elegáns virágcsokrok, esküvői és temetési díszítés, egyedi rendelésre.">
+
+  <link rel="icon" type="image/png" href="pic/kis-logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════════════ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#hero" class="header__logo" aria-label="Orchidea Virágüzlet – főoldal">
+        <img src="pic/nagy-logo.png" alt="Orchidea Virágüzlet logó">
+      </a>
+      <a href="#contact" class="btn btn--outline">
+        <span class="btn-icon">🌸</span> Rendelés
+      </a>
+    </div>
+  </header>
+
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__overlay"></div>
+
+    <div class="hero__inner">
+
+      <div class="hero__content">
+        <span class="hero__eyebrow">Virágüzlet &amp; Dekoráció</span>
+        <p class="hero__brand">Orchidea</p>
+        <h1 class="hero__title">Frissesség és elegancia minden sziromban.</h1>
+        <p class="hero__subtitle">
+          Hiszünk abban, hogy a virág a legszebb gesztus. Üzletünkben nem csak csokrokat kötünk:
+          segítünk kifejezni azt, amit szavakkal nehéz. Minden reggel frissen válogatott
+          alapanyagokkal dolgozunk, hogy a nálunk választott virágok napokig díszíthessék otthonát.
+        </p>
+        <a href="#contact" class="btn btn--primary">Rendelje meg most</a>
+
+      </div>
+
+      <div class="hero__photo">
+        <img
+          src="pic/shop.png"
+          alt="Orchidea Virágüzlet – üzlet belső"
+        >
+      </div>
+
+    </div>
+
+    <div class="hero__stats-bar">
+      <div class="hero__stat">
+        <span class="hero__stat-value">20+</span>
+        <span class="hero__stat-label">Év tapasztalat</span>
+      </div>
+      <div class="hero__stats-divider" aria-hidden="true"></div>
+      <div class="hero__stat">
+        <span class="hero__stat-value">1000+</span>
+        <span class="hero__stat-label">Elégedett vevő</span>
+      </div>
+      <div class="hero__stats-divider" aria-hidden="true"></div>
+      <div class="hero__stat">
+        <span class="hero__stat-value">Napi</span>
+        <span class="hero__stat-label">Friss virágok</span>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">Görgessen</div>
+  </section>
+
+
+  <main class="page-content">
+
+
+
+    <!-- ═══════════════════════════════════════════
+         GALÉRIA
+    ═══════════════════════════════════════════════ -->
+    <div class="section-card">
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <h2 class="section-title">Galériánk</h2>
+
+          <div class="gallery-wrap">
+
+            <button class="gallery-nav gallery-nav--prev" aria-label="Előző kép">
+              <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+
+            <div class="gallery-track">
+              <div class="gallery-slide">
+                <img src="pic/flower-pic/pic-1.jpg" alt="Virágcsokor 1" loading="lazy">
+              </div>
+              <div class="gallery-slide">
+                <img src="pic/flower-pic/pic-2.jpg" alt="Virágcsokor 2" loading="lazy">
+              </div>
+              <div class="gallery-slide">
+                <img src="pic/flower-pic/pic-3.jpg" alt="Virágcsokor 3" loading="lazy">
+              </div>
+              <div class="gallery-slide">
+                <img src="pic/flower-pic/pic-4.jpg" alt="Virágcsokor 4" loading="lazy">
+              </div>
+              <div class="gallery-slide">
+                <img src="pic/flower-pic/pic-5.jpg" alt="Virágcsokor 5" loading="lazy">
+              </div>
+              <div class="gallery-slide">
+                <img src="pic/flower-pic/pic-6.jpg" alt="Virágcsokor 6" loading="lazy">
+              </div>
+            </div>
+
+            <button class="gallery-nav gallery-nav--next" aria-label="Következő kép">
+              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+
+          </div>
+
+          <div class="gallery-dots">
+            <button class="gallery-dot active" aria-label="1. kép"></button>
+            <button class="gallery-dot" aria-label="2. kép"></button>
+            <button class="gallery-dot" aria-label="3. kép"></button>
+            <button class="gallery-dot" aria-label="4. kép"></button>
+            <button class="gallery-dot" aria-label="5. kép"></button>
+            <button class="gallery-dot" aria-label="6. kép"></button>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════════
+         SZOLGÁLTATÁSOK
+    ═══════════════════════════════════════════════ -->
+    <div class="section-card">
+      <section class="services" id="services">
+        <div class="container">
+          <h2 class="section-title">Szolgáltatásaink</h2>
+          <div class="services__grid">
+
+            <div class="service-card">
+              <span class="service-card__icon">🌸</span>
+              <h3 class="service-card__title">Esküvői dekoráció</h3>
+              <p class="service-card__text">
+                Menyasszonyi csokrok, asztaldíszek és templomi díszítés –
+                az álomesküvő virágait mi készítjük el.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <span class="service-card__icon">🕊️</span>
+              <h3 class="service-card__title">Temetési koszorúk</h3>
+              <p class="service-card__text">
+                Méltóságteljes koszorúk és gyászkötések, amelyek
+                egy utolsó búcsú szépségét fejezik ki.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <span class="service-card__icon">🎂</span>
+              <h3 class="service-card__title">Születésnapi csokrok</h3>
+              <p class="service-card__text">
+                Meglepetés virágcsokrok minden alkalomra –
+                személyre szabva, friss szezonális virágokból.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <span class="service-card__icon">🎓</span>
+              <h3 class="service-card__title">Ballagási csokrok</h3>
+              <p class="service-card__text">
+                Egyedi ballagási csokrok és csomagok –
+                méltó ajándék egy fontos mérföldkőhöz.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <span class="service-card__icon">🕯️</span>
+              <h3 class="service-card__title">Koszorúk & Adventi díszek</h3>
+              <p class="service-card__text">
+                Kézzel készített adventi koszorúk, ünnepi
+                dekorációk és szezonális virágdíszek egész évre.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <span class="service-card__icon">🎁</span>
+              <h3 class="service-card__title">Ajándék csomag</h3>
+              <p class="service-card__text">
+                Virág és ajándék kombinációk – csokoládéval,
+                illatgyertyával vagy személyes üzenettel.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════════
+         KAPCSOLAT & RENDELÉS
+    ═══════════════════════════════════════════════ -->
+    <div class="section-card" id="contact">
+      <section class="contact">
+        <div class="container">
+          <h2 class="section-title">Rendelés</h2>
+
+          <div class="contact__inner">
+            <div class="contact__intro">
+              <p>
+                Rendelését leadhatja az alábbi űrlapon, telefonon vagy e-mailben –
+                elérhetőségeinket az oldal alján találja.
+              </p>
+            </div>
+
+            <form class="contact__form" action="#" method="post" novalidate>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Teljes neve</label>
+                  <input type="text" id="name" name="name"
+                    placeholder="pl. Kovács Éva" autocomplete="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="date">Mikorra kéri?</label>
+                  <input type="date" id="date" name="date" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">E-mail cím</label>
+                  <input type="email" id="email" name="email"
+                    placeholder="pl. kovacs.eva@gmail.com" autocomplete="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Telefonszám</label>
+                  <input type="tel" id="phone" name="phone"
+                    placeholder="pl. +36 30 123 4567" autocomplete="tel">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Mit szeretne rendelni?</label>
+                <textarea id="message" name="message"
+                  placeholder="Írja le részletesen rendelési igényét – alkalmat, mennyiséget, preferált virágokat, színeket..."
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary">Küldés</button>
+
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════════
+         FOOTER
+    ═══════════════════════════════════════════════ -->
+    <div class="section-card section-card--dark">
+      <footer class="footer">
+
+        <div class="footer__wrap">
+          <div class="footer__columns">
+
+            <!-- Bal: logó + elérhetőség -->
+            <div class="footer__contact">
+              <a href="#hero" class="footer__logo" aria-label="Vissza a tetejére">
+                <img src="pic/nagy-logo.png" alt="Orchidea Virágüzlet">
+              </a>
+              <ul class="footer__contact-list">
+                <li class="footer__contact-item">
+                  <span class="footer__contact-icon">📍</span>
+                  <span>2800 Tatabánya,<br>Arany János utca 69.</span>
+                </li>
+                <li class="footer__contact-item">
+                  <span class="footer__contact-icon">📞</span>
+                  <a href="tel:+36209659786">06 20 9659 786</a>
+                </li>
+                <li class="footer__contact-item">
+                  <span class="footer__contact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                  </span>
+                  <a href="mailto:info@orchidea-viraguzlet.hu">info@orchidea-viraguzlet.hu</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Közép: nyitvatartás -->
+            <div class="footer__hours">
+              <p class="footer__hours-title">Nyitvatartás</p>
+              <div class="footer__hours-row">
+                <span class="footer__hours-day">Hétfő – Péntek</span>
+                <span>8:00 – 18:00</span>
+              </div>
+              <div class="footer__hours-row">
+                <span class="footer__hours-day">Szombat</span>
+                <span>8:00 – 13:00</span>
+              </div>
+              <div class="footer__hours-row">
+                <span class="footer__hours-day">Vasárnap</span>
+                <span>8:00 – 12:00</span>
+              </div>
+            </div>
+
+            <!-- Jobb: közösségi média -->
+            <div class="footer__social">
+              <div class="footer__social-inner">
+                <p class="footer__social-title">Kövessen minket</p>
+                <p class="footer__social-sub">Napi inspiráció, friss virágok,<br>különleges ajánlatok.</p>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                  class="footer__facebook" aria-label="Orchidea Virágüzlet a Facebookon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.313 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+                  </svg>
+                  Facebook oldalunk
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copy">© 2026 Orchidea Virágüzlet – Minden jog fenntartva.</p>
+        </div>
+
+      </footer>
+    </div>
+
+  </main>
+
+
+  <!-- ═══════════════════════════════════════════
+       LIGHTBOX
+  ═══════════════════════════════════════════════ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Kép nagyítva">
+
+    <button class="lightbox__close" aria-label="Bezárás">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+        fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+
+    <button class="lightbox__prev" aria-label="Előző kép">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+    </button>
+
+    <img class="lightbox__img" src="" alt="">
+
+    <button class="lightbox__next" aria-label="Következő kép">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <polyline points="9 18 15 12 9 6"/>
+      </svg>
+    </button>
+
+    <span class="lightbox__counter"></span>
+
+  </div>
+
+
+  <script src="js/gallery.js"></script>
+
+</body>
+</html>
