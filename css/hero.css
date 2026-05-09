@@ -320,9 +320,23 @@
 }
 
 @media (max-width: 600px) {
+  .hero {
+    height: auto;
+    min-height: 100svh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding-top: 90px;
+    padding-bottom: 32px;
+  }
+
   .hero__stats-bar {
-    bottom: 14px;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
     width: calc(100% - 32px);
+    margin: 24px auto 0;
     white-space: normal;
     padding: 0 4px;
   }
@@ -346,10 +360,6 @@
 }
 
 @media (max-width: 480px) {
-  .hero {
-    min-height: 500px;
-  }
-
   .hero__scroll {
     display: none;
   }
